@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- your metadata goes here in the "head" -->
+    <title>netnet CSS HW Modern Minimalist</title>
+    <meta name="jayden h" content="jayden h">
+    <meta name="netnet css hw" content="netnet css hw">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+
+    <style>
+      /* feel free to move this into its own stylesheet */
+
+      *, *::before, *::after { box-sizing: border-box }
+
+      :root {
+        --brand:hsl(133, 51%, 32%);
+        --bg: #eaeaea;
+        --fg: #0b0b0b;
+        --alt: hsl(20, 79%, 20%);
+        --alt-bg: hsl(122, 15%, 44%);
+        --alt-fg: hsl(12, 5%, 90%);
+        --space: 1rem;
+        --measure: 65ch;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: var(--alt-bg);
+          --fg: var(--alt-fg);
+          --brand: var(--alt)
+        }
+      }
+
+      ::selection {
+        background: var(--brand);
+        color: var(--bg);
+      }
+
+      :focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 2px
+      }
+
+      html {
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 5;
+        background: var(--bg);
+        color: var(--fg);
+        overflow-wrap: anywhere;
+        text-align: center;
+      }
+
+      img, video {
+        max-width: 100%;
+        height: auto;
+        display: block
+      }
+
+      a { color: var(--brand); }
+      a:visited { opacity: 0.9 }
+      a:hover, a:focus-visible {
+        text-decoration-thickness: 2px
+      }
+
+      .wrap {
+        max-width: var(--measure);
+        margin-inline: auto;
+        padding: var(--space);
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <!-- you page's content goes here in the body -->
+    <main class="wrap">
+      <h1>
+        Cicada!
+      </h1>
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F64%2F218064-050-B9508437%2Fclose-up-cicada-Magicicada-septendecimthe.jpg&f=1&nofb=1&ipt=41e8c08c2061aaae7dbfb3e84ba724192871fd1e276df86d4b08f62a0c7f3d7d" alt="an image of a periodical cicada from britannica">
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Cicada_orni">(all info is directly from wikipedia)</a>
+      </p>
+      <p>
+        Adult Cicada orni reach approximately 25 millimetres (0.98 in) in length, with a wingspan of about 70 millimetres (2.8 in). The cryptic coloration of the body varies from brown to gray. The abdomen has reddish segments and a silky pubescence. The head shows large and prominent eyes far apart on the sides, three small eyes (ocelli) located on the top, short antennae, and a long proboscis used for feeding on sap. The membranous front wings are transparent with several characteristic black spots.
+      </p>
+    </main>
+
+  </body>
+</html>
