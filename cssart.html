@@ -1,0 +1,98 @@
+<style>
+
+  * { box-sizing: border-box; }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: hsl(172, 96%, 82%);
+  }
+
+  .frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px dashed;
+  }
+  
+  .face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 5px solid hsl(22, 75%, 23%);
+    border-radius: 50%;
+    background-color: hsl(47, 83%, 63%);
+  }
+  
+  .eye_white {
+    position: absolute;
+    left: 23px;
+    top: 55px;
+    width: 55px;
+    height: 55px;
+    border: 5px solid hsl(172, 50%, 87%);
+    border-radius: 50%;
+    background-color: hsl(172, 50%, 87%);
+  }
+  
+  .eye_white_r {
+    position: absolute;
+    left: 117px;
+    top: 55px;
+    width: 55px;
+    height: 55px;
+    border: 5px solid hsl(172, 50%, 87%);
+    border-radius: 50%;
+    background-color: hsl(172, 50%, 87%);
+  }
+  
+  .eye {
+    position: absolute;
+    left: 30px;
+    top: 60px;
+    width: 45px;
+    height: 45px;
+    border: 5px solid hsl(22, 75%, 23%);
+    border-radius: 50%;
+    background-color: hsl(22, 75%, 23%);
+  }
+  
+  .eye_r {
+    position: absolute;
+    left: 120px;
+    top: 60px;
+    width: 45px;
+    height: 45px;
+    border: 5px solid hsl(22, 75%, 23%);
+    border-radius: 50%;
+    background-color: hsl(22, 75%, 23%);
+  }
+  
+  .mouth {
+    position: absolute;
+    width: 65px;
+    height: 30px;
+    left: 65px;
+    top: 105px;
+    border: 5px solid hsl(22, 75%, 23%);
+    border-radius: 30%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+  }
+
+</style>
+
+
+<div class="frame">
+  <!-- add your elements here -->
+  <div class="face"></div>
+  <div class="eye_white"></div>
+  <div class="eye"></div>
+  <div class="eye_white_r"></div>
+  <div class="eye_r"></div>
+  <div class="mouth"></div>
+</div>
